@@ -21,6 +21,29 @@
                     </accordion-item>
                 </accordion>
             </solid-box>
+
+            <solid-box title="Tabla con datos" color="info">
+                <data-table example="1">
+                    <template slot="header">
+                        <tr>
+                            <th>Número</th>
+                            <th>Ordinal</th>
+                            <th>Romano</th>
+                            <th>Nombre</th>
+                            <th>Inglés</th>
+                        </tr>
+                    </template>
+                    <template slot="body">
+                        <tr>
+                            <td>1</td>
+                            <td>1ro</td>
+                            <td>I</td>
+                            <td>Uno</td>
+                            <td>One</td>
+                        </tr>
+                    </template>
+                </data-table>
+            </solid-box>
         </div>
 
         <div class="col-md-6">
@@ -43,25 +66,20 @@
 
                 <carousel :items="5">
                     <carousel-item active
-                          img="http://placehold.it/900x500/f39c12/ffffff&text=I+Love+Bootstrap"
+                          img="{{ asset('img/photo1.png') }}"
                           caption="Primera">
                     </carousel-item>
-
                     <carousel-item
-                        img="http://placehold.it/900x500/f39c12/ffffff&text=I+Love+Bootstrap"
+                        img="{{ asset('img/photo2.png') }}"
                         caption="Segunda">
                     </carousel-item>
                     <carousel-item
-                        img="http://placehold.it/900x500/f39c12/ffffff&text=I+Love+Bootstrap"
+                        img="{{ asset('img/photo3.jpg') }}"
                         caption="Tercera">
                     </carousel-item>
                     <carousel-item
-                        img="http://placehold.it/900x500/f39c12/ffffff&text=I+Love+Bootstrap"
+                        img="{{ asset('img/photo4.jpg') }}"
                         caption="Cuarta">
-                    </carousel-item>
-                    <carousel-item
-                        img="http://placehold.it/900x500/f39c12/ffffff&text=I+Love+Bootstrap"
-                        caption="Quinta">
                     </carousel-item>
                 </carousel>
             </simple-box>

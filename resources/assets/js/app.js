@@ -24,6 +24,7 @@ Vue.component('tab', require('./components/lte/TabPane.vue'));
 Vue.component('tabs', require('./components/lte/CustomTabs.vue'));
 Vue.component('carousel', require('./components/lte/Carousel.vue'));
 Vue.component('carousel-item', require('./components/lte/CarouselItem.vue'));
+Vue.component('data-table', require('./components/lte/DataTable.vue'));
 
 const app = new Vue({
     el: '#app'

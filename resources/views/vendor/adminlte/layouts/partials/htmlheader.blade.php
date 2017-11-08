@@ -7,6 +7,9 @@
 
     <link href="{{ asset('/css/all.css') }}" rel="stylesheet" type="text/css" />
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('/plugins/dataTables.bootstrap.css') }}">
+
     {!! Charts::assets() !!}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

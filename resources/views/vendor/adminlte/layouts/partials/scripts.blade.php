@@ -4,6 +4,24 @@
 <!-- Laravel App -->
 <script src="{{ url (mix('/js/app.js')) }}" type="text/javascript"></script>
 
+<!-- DataTables -->
+<script src="{{ asset('/plugins/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('/plugins/dataTables.bootstrap.min.js') }}"></script>
+
+<script>
+    $(function () {
+        $('#example1').DataTable()
+        $('#exampleS').DataTable({
+          'paging'      : true,
+          'lengthChange': false,
+          'searching'   : false,
+          'ordering'    : true,
+          'info'        : true,
+          'autoWidth'   : false
+        })
+    })
+</script>
+
 
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
