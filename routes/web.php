@@ -16,5 +16,6 @@ Route::get('/', function () {
 })->name('home');
 
 Route::view('root', 'tests');
+Route::view('spa', 'website.root');
 
 Route::get('tests', 'TestsController@index');
