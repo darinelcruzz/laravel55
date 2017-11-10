@@ -11,7 +11,7 @@
             <solid-box title="Acordeon" color="default">
                 <accordion>
                     <accordion-item title="Uno" color="success" open>
-                        Acordeon número uno
+                        <a href="{{ route('send')}}">Enviar correo</a>
                     </accordion-item>
                     <accordion-item title="Dos" color="danger">
                         Acordeon número dos

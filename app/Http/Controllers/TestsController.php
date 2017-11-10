@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\MarkdownMail;
 use Charts;
 
 class TestsController extends Controller
@@ -26,5 +28,12 @@ class TestsController extends Controller
             ->labels(['One', 'Two', 'Three']);
 
         return view('tests', ['chart' => $chart]);
+    }
+
+    function send()
+    {
+        Mail::to('victorjcg_6@hotmail.com')->send(new MarkdownMail);
+
+        return back();
     }
 }
