@@ -25,6 +25,10 @@ Vue.component('tabs', require('./components/lte/CustomTabs.vue'));
 Vue.component('carousel', require('./components/lte/Carousel.vue'));
 Vue.component('carousel-item', require('./components/lte/CarouselItem.vue'));
 Vue.component('data-table', require('./components/lte/DataTable.vue'));
+Vue.component('thumbnail', require('./components/lte/Thumbnail.vue'));
+Vue.component('tl-item', require('./components/lte/TimelineItem.vue'));
+Vue.component('tl-label', require('./components/lte/TimelineLabel.vue'));
+Vue.component('timeline', require('./components/lte/Timeline.vue'));
 
 const app = new Vue({
     el: '#app'

@@ -86,4 +86,44 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-3">
+            <thumbnail
+                name="Camisa" price="$ 150.00"
+                img="{{ asset('img/photo3.jpg') }}">
+            </thumbnail>
+        </div>
+        <div class="col-md-3">
+            <thumbnail
+                name="Comedor" price="$ 3500.00"
+                img="{{ asset('img/photo2.png') }}">
+            </thumbnail>
+        </div>
+
+        <div class="col-md-6">
+            <timeline>
+                <tl-label>11 Nov. 2017</tl-label>
+
+                <tl-item icon="bolt" color="yellow" hour="17:30">
+                    <label slot="title"><b>Entrenamiento</b> terminado en tiempo record.</label>
+                </tl-item>
+
+                <tl-item icon="star" color="blue" hour="12:00">
+                    <label slot="title"><a href="#">Nueva rutina</a> completada</label>
+                </tl-item>
+
+                <tl-item icon="heartbeat" color="red" hour="09:00">
+                    <label slot="title"><a href="#">Entrenamiento sin completar</a></label>
+                    No te preocupes a todos les pasa <i class="fa fa-smile-o"></i>
+                </tl-item>
+            </timeline>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <calendar class="fuck" :events="events" :editable="true"></calendar>
+        </div>
+    </div>
+
 @endsection
