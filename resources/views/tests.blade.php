@@ -121,8 +121,12 @@
     </div>
 
     <div class="row">
-        <div class="col-md-12">
-            <calendar class="fuck" :events="events" :editable="true"></calendar>
+        <div class="col-md-3">
+            <profile color="success" img="{{ asset('img/user3-128x128.jpg') }}" name="Naoko Tenshi" job="Escritora">
+                <pitem label="Libros">11</pitem>
+                <pitem label="Eventos">12</pitem>
+                <pitem label="Premios">2</pitem>
+            </profile>
         </div>
     </div>
 

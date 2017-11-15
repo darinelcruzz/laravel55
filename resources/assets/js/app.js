@@ -29,6 +29,8 @@ Vue.component('thumbnail', require('./components/lte/Thumbnail.vue'));
 Vue.component('tl-item', require('./components/lte/TimelineItem.vue'));
 Vue.component('tl-label', require('./components/lte/TimelineLabel.vue'));
 Vue.component('timeline', require('./components/lte/Timeline.vue'));
+Vue.component('profile', require('./components/lte/UserProfile.vue'));
+Vue.component('pitem', require('./components/lte/UserProfileItem.vue'));
 
 const app = new Vue({
     el: '#app'
