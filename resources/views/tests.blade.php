@@ -128,6 +128,20 @@
                 <pitem label="Premios">2</pitem>
             </profile>
         </div>
+
+        <div class="col-md-3">
+            <modal-button target="modaltest">
+                <i class="fa fa-pencil"></i>
+            </modal-button>
+
+            <modal id="modaltest" title="Modal de prueba">
+                <pre>
+                    function name() {
+                        
+                    }
+                </pre>
+            </modal>
+        </div>
     </div>
 
 @endsection
